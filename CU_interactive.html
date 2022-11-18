@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="7176429ff9a44ce98aa7f0f5505807ab" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="a26aa893bfee486490c888c1e500eec8" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_7176429ff9a44ce98aa7f0f5505807ab = echarts.init(
-            document.getElementById('7176429ff9a44ce98aa7f0f5505807ab'), 'white', {renderer: 'canvas'});
-        var option_7176429ff9a44ce98aa7f0f5505807ab = {
+        var chart_a26aa893bfee486490c888c1e500eec8 = echarts.init(
+            document.getElementById('a26aa893bfee486490c888c1e500eec8'), 'white', {renderer: 'canvas'});
+        var option_a26aa893bfee486490c888c1e500eec8 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -319,45 +319,14 @@
         },
         {
             "type": "scatter",
-            "name": "CU2210",
+            "name": "CU2211",
             "symbolSize": 10,
             "data": [
                 [
                     0.6576048036137278,
                     720.0,
                     "10-17"
-                ]
-            ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8,
-                "formatter": function(params){return params.value[2];}
-            },
-            "tooltip": {
-                "show": true,
-                "trigger": "item",
-                "triggerOn": "mousemove|click",
-                "axisPointer": {
-                    "type": "line"
-                },
-                "showContent": true,
-                "alwaysShowContent": false,
-                "showDelay": 0,
-                "hideDelay": 100,
-                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
-                "textStyle": {
-                    "fontSize": 14
-                },
-                "borderWidth": 0,
-                "padding": 5
-            }
-        },
-        {
-            "type": "scatter",
-            "name": "CU2212",
-            "symbolSize": 10,
-            "data": [
+                ],
                 [
                     9.81409809840803,
                     770.0,
@@ -462,7 +431,38 @@
                     0.6681695074682539,
                     210.0,
                     "11-15"
-                ],
+                ]
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(params){return params.value[2];}
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "type": "scatter",
+            "name": "CU2212",
+            "symbolSize": 10,
+            "data": [
                 [
                     13.474893507164063,
                     300.0,
@@ -472,6 +472,11 @@
                     13.388140618382042,
                     280.0,
                     "11-17"
+                ],
+                [
+                    15.057359043202343,
+                    330.0,
+                    "11-18"
                 ]
             ],
             "label": {
@@ -506,14 +511,14 @@
                 "high",
                 "mid",
                 "low",
-                "CU2210",
+                "CU2211",
                 "CU2212"
             ],
             "selected": {
                 "high": true,
                 "mid": true,
                 "low": true,
-                "CU2210": true,
+                "CU2211": true,
                 "CU2212": true
             },
             "show": true,
@@ -673,7 +678,7 @@
         }
     }
 };
-        chart_7176429ff9a44ce98aa7f0f5505807ab.setOption(option_7176429ff9a44ce98aa7f0f5505807ab);
+        chart_a26aa893bfee486490c888c1e500eec8.setOption(option_a26aa893bfee486490c888c1e500eec8);
     </script>
 </body>
 </html>
