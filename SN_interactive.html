@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="6ea7795b30b246c0ac6be88aed2fe824" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="34c700fdac8040c29e0895d259720e64" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_6ea7795b30b246c0ac6be88aed2fe824 = echarts.init(
-            document.getElementById('6ea7795b30b246c0ac6be88aed2fe824'), 'white', {renderer: 'canvas'});
-        var option_6ea7795b30b246c0ac6be88aed2fe824 = {
+        var chart_34c700fdac8040c29e0895d259720e64 = echarts.init(
+            document.getElementById('34c700fdac8040c29e0895d259720e64'), 'white', {renderer: 'canvas'});
+        var option_34c700fdac8040c29e0895d259720e64 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -63,7 +63,7 @@
                 ],
                 [
                     1.569,
-                    3002.5
+                    2990.0
                 ],
                 [
                     2.615,
@@ -153,7 +153,7 @@
                 ],
                 [
                     1.569,
-                    1035.0
+                    940.0
                 ],
                 [
                     2.615,
@@ -243,7 +243,7 @@
                 ],
                 [
                     1.569,
-                    -172.5
+                    -180.0
                 ],
                 [
                     2.615,
@@ -320,6 +320,52 @@
         {
             "type": "scatter",
             "name": "SN2404",
+            "symbolSize": 10,
+            "data": [
+                [
+                    2.1103193216669673,
+                    -570.0,
+                    "03-18"
+                ],
+                [
+                    1.705127100387764,
+                    -490.0,
+                    "03-19"
+                ],
+                [
+                    1.3452015027322404,
+                    -650.0,
+                    "03-20"
+                ]
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(params){return params.value[2];}
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "type": "scatter",
+            "name": "SN2403",
             "symbolSize": 10,
             "data": [
                 [
@@ -416,48 +462,8 @@
                     0.1909238835653589,
                     -300.0,
                     "03-15"
-                ],
-                [
-                    2.1103193216669673,
-                    -570.0,
-                    "03-18"
-                ],
-                [
-                    1.705127100387764,
-                    -490.0,
-                    "03-19"
                 ]
             ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8,
-                "formatter": function(params){return params.value[2];}
-            },
-            "tooltip": {
-                "show": true,
-                "trigger": "item",
-                "triggerOn": "mousemove|click",
-                "axisPointer": {
-                    "type": "line"
-                },
-                "showContent": true,
-                "alwaysShowContent": false,
-                "showDelay": 0,
-                "hideDelay": 100,
-                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
-                "textStyle": {
-                    "fontSize": 14
-                },
-                "borderWidth": 0,
-                "padding": 5
-            }
-        },
-        {
-            "type": "scatter",
-            "name": "SN2402",
-            "symbolSize": 10,
-            "data": [],
             "label": {
                 "show": true,
                 "position": "top",
@@ -2612,7 +2618,7 @@
                 "mid",
                 "low",
                 "SN2404",
-                "SN2402",
+                "SN2403",
                 "SN2402",
                 "SN2401",
                 "SN2312",
@@ -2635,6 +2641,7 @@
                 "mid": true,
                 "low": true,
                 "SN2404": true,
+                "SN2403": false,
                 "SN2402": false,
                 "SN2401": false,
                 "SN2312": false,
@@ -2809,7 +2816,7 @@
         }
     }
 };
-        chart_6ea7795b30b246c0ac6be88aed2fe824.setOption(option_6ea7795b30b246c0ac6be88aed2fe824);
+        chart_34c700fdac8040c29e0895d259720e64.setOption(option_34c700fdac8040c29e0895d259720e64);
     </script>
 </body>
 </html>
