@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="1b1f72f2344a43f0bdd4447291314ec0" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="b575426bcaa24d50b394597697f6937c" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_1b1f72f2344a43f0bdd4447291314ec0 = echarts.init(
-            document.getElementById('1b1f72f2344a43f0bdd4447291314ec0'), 'white', {renderer: 'canvas'});
-        var option_1b1f72f2344a43f0bdd4447291314ec0 = {
+        var chart_b575426bcaa24d50b394597697f6937c = echarts.init(
+            document.getElementById('b575426bcaa24d50b394597697f6937c'), 'white', {renderer: 'canvas'});
+        var option_b575426bcaa24d50b394597697f6937c = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -323,6 +323,52 @@
             "symbolSize": 10,
             "data": [
                 [
+                    16.696690786884254,
+                    105.0,
+                    "10-16"
+                ],
+                [
+                    14.704529531816382,
+                    70.0,
+                    "10-17"
+                ],
+                [
+                    15.262312112456579,
+                    65.0,
+                    "10-18"
+                ]
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(params){return params.value[2];}
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "type": "scatter",
+            "name": "ZN2410",
+            "symbolSize": 10,
+            "data": [
+                [
                     10.127027722942236,
                     165.0,
                     "09-19"
@@ -391,53 +437,8 @@
                     0.5707434052757794,
                     5.0,
                     "10-15"
-                ],
-                [
-                    16.696690786884254,
-                    105.0,
-                    "10-16"
-                ],
-                [
-                    14.704529531816382,
-                    70.0,
-                    "10-17"
-                ],
-                [
-                    15.262312112456579,
-                    65.0,
-                    "10-18"
                 ]
             ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8,
-                "formatter": function(params){return params.value[2];}
-            },
-            "tooltip": {
-                "show": true,
-                "trigger": "item",
-                "triggerOn": "mousemove|click",
-                "axisPointer": {
-                    "type": "line"
-                },
-                "showContent": true,
-                "alwaysShowContent": false,
-                "showDelay": 0,
-                "hideDelay": 100,
-                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
-                "textStyle": {
-                    "fontSize": 14
-                },
-                "borderWidth": 0,
-                "padding": 5
-            }
-        },
-        {
-            "type": "scatter",
-            "name": "ZN2409",
-            "symbolSize": 10,
-            "data": [],
             "label": {
                 "show": true,
                 "position": "top",
@@ -2611,7 +2612,7 @@
                 "mid",
                 "low",
                 "ZN2411",
-                "ZN2409",
+                "ZN2410",
                 "ZN2409",
                 "ZN2408",
                 "ZN2407",
@@ -2634,6 +2635,7 @@
                 "mid": true,
                 "low": true,
                 "ZN2411": true,
+                "ZN2410": false,
                 "ZN2409": false,
                 "ZN2408": false,
                 "ZN2407": false,
@@ -2807,7 +2809,7 @@
         }
     }
 };
-        chart_1b1f72f2344a43f0bdd4447291314ec0.setOption(option_1b1f72f2344a43f0bdd4447291314ec0);
+        chart_b575426bcaa24d50b394597697f6937c.setOption(option_b575426bcaa24d50b394597697f6937c);
     </script>
 </body>
 </html>
