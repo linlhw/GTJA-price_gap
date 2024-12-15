@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="7a6d72114ae44d6a915d590a13891842" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="ffbf89fc87224d23b51cedd66134e8ae" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_7a6d72114ae44d6a915d590a13891842 = echarts.init(
-            document.getElementById('7a6d72114ae44d6a915d590a13891842'), 'white', {renderer: 'canvas'});
-        var option_7a6d72114ae44d6a915d590a13891842 = {
+        var chart_ffbf89fc87224d23b51cedd66134e8ae = echarts.init(
+            document.getElementById('ffbf89fc87224d23b51cedd66134e8ae'), 'white', {renderer: 'canvas'});
+        var option_ffbf89fc87224d23b51cedd66134e8ae = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -316,6 +316,36 @@
             },
             "zlevel": 0,
             "z": 0
+        },
+        {
+            "type": "scatter",
+            "name": "NI2501",
+            "symbolSize": 10,
+            "data": [],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(params){return params.value[2];}
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
         },
         {
             "type": "scatter",
@@ -2558,137 +2588,6 @@
                 "borderWidth": 0,
                 "padding": 5
             }
-        },
-        {
-            "type": "scatter",
-            "name": "NI2307",
-            "symbolSize": 10,
-            "data": [
-                [
-                    28.138829407566025,
-                    2870.0,
-                    "06-16"
-                ],
-                [
-                    35.96306068601583,
-                    2860.0,
-                    "06-19"
-                ],
-                [
-                    32.70696378830083,
-                    2840.0,
-                    "06-20"
-                ],
-                [
-                    33.35256816740647,
-                    3100.0,
-                    "06-21"
-                ],
-                [
-                    28.846456692913385,
-                    2840.0,
-                    "06-26"
-                ],
-                [
-                    25.64224473889322,
-                    2960.0,
-                    "06-27"
-                ],
-                [
-                    18.071428571428573,
-                    2900.0,
-                    "06-28"
-                ],
-                [
-                    14.345609065155807,
-                    3090.0,
-                    "06-29"
-                ],
-                [
-                    7.4267578125,
-                    2520.0,
-                    "06-30"
-                ],
-                [
-                    5.855194123819517,
-                    2210.0,
-                    "07-03"
-                ],
-                [
-                    2.43042071197411,
-                    2400.0,
-                    "07-04"
-                ],
-                [
-                    2.4182776801405974,
-                    2480.0,
-                    "07-05"
-                ],
-                [
-                    1.7346317711503347,
-                    2450.0,
-                    "07-06"
-                ],
-                [
-                    1.5155203895313452,
-                    2840.0,
-                    "07-07"
-                ],
-                [
-                    1.6925308194343727,
-                    2870.0,
-                    "07-10"
-                ],
-                [
-                    1.434108527131783,
-                    2700.0,
-                    "07-11"
-                ],
-                [
-                    1.0666666666666667,
-                    2320.0,
-                    "07-12"
-                ],
-                [
-                    0.8822622107969151,
-                    3410.0,
-                    "07-13"
-                ],
-                [
-                    0.7700366684127815,
-                    5800.0,
-                    "07-14"
-                ],
-                [
-                    0.5912408759124088,
-                    4920.0,
-                    "07-17"
-                ]
-            ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8,
-                "formatter": function(params){return params.value[2];}
-            },
-            "tooltip": {
-                "show": true,
-                "trigger": "item",
-                "triggerOn": "mousemove|click",
-                "axisPointer": {
-                    "type": "line"
-                },
-                "showContent": true,
-                "alwaysShowContent": false,
-                "showDelay": 0,
-                "hideDelay": 100,
-                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
-                "textStyle": {
-                    "fontSize": 14
-                },
-                "borderWidth": 0,
-                "padding": 5
-            }
         }
     ],
     "legend": [
@@ -2697,6 +2596,7 @@
                 "high",
                 "mid",
                 "low",
+                "NI2501",
                 "NI2412",
                 "NI2411",
                 "NI2410",
@@ -2713,14 +2613,14 @@
                 "NI2311",
                 "NI2310",
                 "NI2309",
-                "NI2308",
-                "NI2307"
+                "NI2308"
             ],
             "selected": {
                 "high": true,
                 "mid": true,
                 "low": true,
-                "NI2412": true,
+                "NI2501": true,
+                "NI2412": false,
                 "NI2411": false,
                 "NI2410": false,
                 "NI2409": false,
@@ -2736,8 +2636,7 @@
                 "NI2311": false,
                 "NI2310": false,
                 "NI2309": false,
-                "NI2308": false,
-                "NI2307": false
+                "NI2308": false
             },
             "show": true,
             "padding": 5,
@@ -2896,7 +2795,7 @@
         }
     }
 };
-        chart_7a6d72114ae44d6a915d590a13891842.setOption(option_7a6d72114ae44d6a915d590a13891842);
+        chart_ffbf89fc87224d23b51cedd66134e8ae.setOption(option_ffbf89fc87224d23b51cedd66134e8ae);
     </script>
 </body>
 </html>

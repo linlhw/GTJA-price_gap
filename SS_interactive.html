@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="15a04c03089c41d9a7d5233e299cdf36" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="7c974d49dd1949ad93af09be853c912f" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_15a04c03089c41d9a7d5233e299cdf36 = echarts.init(
-            document.getElementById('15a04c03089c41d9a7d5233e299cdf36'), 'white', {renderer: 'canvas'});
-        var option_15a04c03089c41d9a7d5233e299cdf36 = {
+        var chart_7c974d49dd1949ad93af09be853c912f = echarts.init(
+            document.getElementById('7c974d49dd1949ad93af09be853c912f'), 'white', {renderer: 'canvas'});
+        var option_7c974d49dd1949ad93af09be853c912f = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -316,6 +316,36 @@
             },
             "zlevel": 0,
             "z": 0
+        },
+        {
+            "type": "scatter",
+            "name": "SS2501",
+            "symbolSize": 10,
+            "data": [],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(params){return params.value[2];}
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
         },
         {
             "type": "scatter",
@@ -2558,137 +2588,6 @@
                 "borderWidth": 0,
                 "padding": 5
             }
-        },
-        {
-            "type": "scatter",
-            "name": "SS2307",
-            "symbolSize": 10,
-            "data": [
-                [
-                    9.387047964896354,
-                    95.0,
-                    "06-16"
-                ],
-                [
-                    7.700194859422845,
-                    35.0,
-                    "06-19"
-                ],
-                [
-                    6.951906912351254,
-                    45.0,
-                    "06-20"
-                ],
-                [
-                    5.620225102319236,
-                    60.0,
-                    "06-21"
-                ],
-                [
-                    4.500089879561388,
-                    60.0,
-                    "06-26"
-                ],
-                [
-                    3.0622928592949683,
-                    25.0,
-                    "06-27"
-                ],
-                [
-                    2.1726157381667224,
-                    35.0,
-                    "06-28"
-                ],
-                [
-                    1.883606181150551,
-                    10.0,
-                    "06-29"
-                ],
-                [
-                    1.5836151970423975,
-                    5.0,
-                    "06-30"
-                ],
-                [
-                    1.652142771875373,
-                    5.0,
-                    "07-03"
-                ],
-                [
-                    1.591573120098416,
-                    35.0,
-                    "07-04"
-                ],
-                [
-                    1.312758653877001,
-                    25.0,
-                    "07-05"
-                ],
-                [
-                    1.266134357927598,
-                    15.0,
-                    "07-06"
-                ],
-                [
-                    1.1539413949649195,
-                    10.0,
-                    "07-07"
-                ],
-                [
-                    0.9216185376985868,
-                    10.0,
-                    "07-10"
-                ],
-                [
-                    0.8333984527623661,
-                    -20.0,
-                    "07-11"
-                ],
-                [
-                    0.826244027502622,
-                    -5.0,
-                    "07-12"
-                ],
-                [
-                    0.8318911035488575,
-                    -25.0,
-                    "07-13"
-                ],
-                [
-                    0.8339181286549707,
-                    20.0,
-                    "07-14"
-                ],
-                [
-                    0.8339181286549707,
-                    220.0,
-                    "07-17"
-                ]
-            ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8,
-                "formatter": function(params){return params.value[2];}
-            },
-            "tooltip": {
-                "show": true,
-                "trigger": "item",
-                "triggerOn": "mousemove|click",
-                "axisPointer": {
-                    "type": "line"
-                },
-                "showContent": true,
-                "alwaysShowContent": false,
-                "showDelay": 0,
-                "hideDelay": 100,
-                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
-                "textStyle": {
-                    "fontSize": 14
-                },
-                "borderWidth": 0,
-                "padding": 5
-            }
         }
     ],
     "legend": [
@@ -2697,6 +2596,7 @@
                 "high",
                 "mid",
                 "low",
+                "SS2501",
                 "SS2412",
                 "SS2411",
                 "SS2410",
@@ -2713,14 +2613,14 @@
                 "SS2311",
                 "SS2310",
                 "SS2309",
-                "SS2308",
-                "SS2307"
+                "SS2308"
             ],
             "selected": {
                 "high": true,
                 "mid": true,
                 "low": true,
-                "SS2412": true,
+                "SS2501": true,
+                "SS2412": false,
                 "SS2411": false,
                 "SS2410": false,
                 "SS2409": false,
@@ -2736,8 +2636,7 @@
                 "SS2311": false,
                 "SS2310": false,
                 "SS2309": false,
-                "SS2308": false,
-                "SS2307": false
+                "SS2308": false
             },
             "show": true,
             "padding": 5,
@@ -2896,7 +2795,7 @@
         }
     }
 };
-        chart_15a04c03089c41d9a7d5233e299cdf36.setOption(option_15a04c03089c41d9a7d5233e299cdf36);
+        chart_7c974d49dd1949ad93af09be853c912f.setOption(option_7c974d49dd1949ad93af09be853c912f);
     </script>
 </body>
 </html>
