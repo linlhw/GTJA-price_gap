@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="2543de0d060a4570b02eeb0c086654be" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="035c741a65d94e20b4bec3d961a11eec" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_2543de0d060a4570b02eeb0c086654be = echarts.init(
-            document.getElementById('2543de0d060a4570b02eeb0c086654be'), 'white', {renderer: 'canvas'});
-        var option_2543de0d060a4570b02eeb0c086654be = {
+        var chart_035c741a65d94e20b4bec3d961a11eec = echarts.init(
+            document.getElementById('035c741a65d94e20b4bec3d961a11eec'), 'white', {renderer: 'canvas'});
+        var option_035c741a65d94e20b4bec3d961a11eec = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -316,6 +316,36 @@
             },
             "zlevel": 0,
             "z": 0
+        },
+        {
+            "type": "scatter",
+            "name": "CU2504",
+            "symbolSize": 10,
+            "data": [],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(params){return params.value[2];}
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
         },
         {
             "type": "scatter",
@@ -2553,112 +2583,6 @@
                 "borderWidth": 0,
                 "padding": 5
             }
-        },
-        {
-            "type": "scatter",
-            "name": "CU2310",
-            "symbolSize": 10,
-            "data": [
-                [
-                    45.475295223547384,
-                    180.0,
-                    "09-18"
-                ],
-                [
-                    45.450751783893985,
-                    210.0,
-                    "09-19"
-                ],
-                [
-                    42.11976320582878,
-                    190.0,
-                    "09-20"
-                ],
-                [
-                    40.38521745048663,
-                    180.0,
-                    "09-21"
-                ],
-                [
-                    35.251601756533006,
-                    190.0,
-                    "09-22"
-                ],
-                [
-                    36.0067053280174,
-                    200.0,
-                    "09-25"
-                ],
-                [
-                    37.527201924178215,
-                    190.0,
-                    "09-26"
-                ],
-                [
-                    62.04151031894934,
-                    200.0,
-                    "09-27"
-                ],
-                [
-                    89.89202657807309,
-                    220.0,
-                    "09-28"
-                ],
-                [
-                    38.22222222222222,
-                    110.0,
-                    "10-09"
-                ],
-                [
-                    24.34841628959276,
-                    90.0,
-                    "10-10"
-                ],
-                [
-                    17.644174185955276,
-                    50.0,
-                    "10-11"
-                ],
-                [
-                    10.596826126954921,
-                    30.0,
-                    "10-12"
-                ],
-                [
-                    1.6796875,
-                    -10.0,
-                    "10-13"
-                ],
-                [
-                    0.6504932018128499,
-                    -110.0,
-                    "10-16"
-                ]
-            ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8,
-                "formatter": function(params){return params.value[2];}
-            },
-            "tooltip": {
-                "show": true,
-                "trigger": "item",
-                "triggerOn": "mousemove|click",
-                "axisPointer": {
-                    "type": "line"
-                },
-                "showContent": true,
-                "alwaysShowContent": false,
-                "showDelay": 0,
-                "hideDelay": 100,
-                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
-                "textStyle": {
-                    "fontSize": 14
-                },
-                "borderWidth": 0,
-                "padding": 5
-            }
         }
     ],
     "legend": [
@@ -2667,6 +2591,7 @@
                 "high",
                 "mid",
                 "low",
+                "CU2504",
                 "CU2503",
                 "CU2502",
                 "CU2501",
@@ -2683,14 +2608,14 @@
                 "CU2402",
                 "CU2401",
                 "CU2312",
-                "CU2311",
-                "CU2310"
+                "CU2311"
             ],
             "selected": {
                 "high": true,
                 "mid": true,
                 "low": true,
-                "CU2503": true,
+                "CU2504": true,
+                "CU2503": false,
                 "CU2502": false,
                 "CU2501": false,
                 "CU2412": false,
@@ -2706,8 +2631,7 @@
                 "CU2402": false,
                 "CU2401": false,
                 "CU2312": false,
-                "CU2311": false,
-                "CU2310": false
+                "CU2311": false
             },
             "show": true,
             "padding": 5,
@@ -2866,7 +2790,7 @@
         }
     }
 };
-        chart_2543de0d060a4570b02eeb0c086654be.setOption(option_2543de0d060a4570b02eeb0c086654be);
+        chart_035c741a65d94e20b4bec3d961a11eec.setOption(option_035c741a65d94e20b4bec3d961a11eec);
     </script>
 </body>
 </html>
