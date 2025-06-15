@@ -10,11 +10,11 @@
 <body>
     <style>.box {  }; </style>
     <div class="box">
-                <div id="cc5f2f1869f84a17945a54cf70ededc0" class="chart-container" style="width:900px; height:500px;"></div>
+                <div id="35a5e99bcb7d43f592d96941c410744b" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_cc5f2f1869f84a17945a54cf70ededc0 = echarts.init(
-            document.getElementById('cc5f2f1869f84a17945a54cf70ededc0'), 'white', {renderer: 'canvas'});
-        var option_cc5f2f1869f84a17945a54cf70ededc0 = {
+        var chart_35a5e99bcb7d43f592d96941c410744b = echarts.init(
+            document.getElementById('35a5e99bcb7d43f592d96941c410744b'), 'white', {renderer: 'canvas'});
+        var option_35a5e99bcb7d43f592d96941c410744b = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -319,6 +319,36 @@
             },
             "zlevel": 0,
             "z": 0
+        },
+        {
+            "type": "scatter",
+            "name": "AL2507",
+            "symbolSize": 10,
+            "data": [],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(params){return params.value[2];}
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
         },
         {
             "type": "scatter",
@@ -2536,137 +2566,6 @@
                 "borderWidth": 0,
                 "padding": 5
             }
-        },
-        {
-            "type": "scatter",
-            "name": "AL2401",
-            "symbolSize": 10,
-            "data": [
-                [
-                    15.409648836567182,
-                    90.0,
-                    "12-18"
-                ],
-                [
-                    13.507219669813702,
-                    40.0,
-                    "12-19"
-                ],
-                [
-                    11.841896423725776,
-                    25.0,
-                    "12-20"
-                ],
-                [
-                    11.70605831940926,
-                    40.0,
-                    "12-21"
-                ],
-                [
-                    10.80744006020858,
-                    45.0,
-                    "12-22"
-                ],
-                [
-                    9.951585838857866,
-                    30.0,
-                    "12-25"
-                ],
-                [
-                    8.54039127829734,
-                    40.0,
-                    "12-26"
-                ],
-                [
-                    7.670321768829768,
-                    55.0,
-                    "12-27"
-                ],
-                [
-                    6.338904602725637,
-                    55.0,
-                    "12-28"
-                ],
-                [
-                    4.9902015677491605,
-                    145.0,
-                    "12-29"
-                ],
-                [
-                    4.771181908472763,
-                    65.0,
-                    "01-02"
-                ],
-                [
-                    4.1935978335845485,
-                    170.0,
-                    "01-03"
-                ],
-                [
-                    3.4175790443057403,
-                    85.0,
-                    "01-04"
-                ],
-                [
-                    2.9607883444253154,
-                    85.0,
-                    "01-05"
-                ],
-                [
-                    2.133125882537524,
-                    55.0,
-                    "01-08"
-                ],
-                [
-                    1.6553900462653437,
-                    80.0,
-                    "01-09"
-                ],
-                [
-                    1.424562000340194,
-                    80.0,
-                    "01-10"
-                ],
-                [
-                    1.0902079239860407,
-                    40.0,
-                    "01-11"
-                ],
-                [
-                    0.6009653805581306,
-                    50.0,
-                    "01-12"
-                ],
-                [
-                    0.30381431105854523,
-                    70.0,
-                    "01-15"
-                ]
-            ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8,
-                "formatter": function(params){return params.value[2];}
-            },
-            "tooltip": {
-                "show": true,
-                "trigger": "item",
-                "triggerOn": "mousemove|click",
-                "axisPointer": {
-                    "type": "line"
-                },
-                "showContent": true,
-                "alwaysShowContent": false,
-                "showDelay": 0,
-                "hideDelay": 100,
-                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
-                "textStyle": {
-                    "fontSize": 14
-                },
-                "borderWidth": 0,
-                "padding": 5
-            }
         }
     ],
     "legend": [
@@ -2675,6 +2574,7 @@
                 "high",
                 "mid",
                 "low",
+                "AL2507",
                 "AL2506",
                 "AL2505",
                 "AL2504",
@@ -2691,14 +2591,14 @@
                 "AL2405",
                 "AL2404",
                 "AL2403",
-                "AL2402",
-                "AL2401"
+                "AL2402"
             ],
             "selected": {
                 "high": true,
                 "mid": true,
                 "low": true,
-                "AL2506": true,
+                "AL2507": true,
+                "AL2506": false,
                 "AL2505": false,
                 "AL2504": false,
                 "AL2503": false,
@@ -2714,8 +2614,7 @@
                 "AL2405": false,
                 "AL2404": false,
                 "AL2403": false,
-                "AL2402": false,
-                "AL2401": false
+                "AL2402": false
             },
             "show": true,
             "padding": 5,
@@ -2874,13 +2773,13 @@
         }
     }
 };
-        chart_cc5f2f1869f84a17945a54cf70ededc0.setOption(option_cc5f2f1869f84a17945a54cf70ededc0);
+        chart_35a5e99bcb7d43f592d96941c410744b.setOption(option_35a5e99bcb7d43f592d96941c410744b);
     </script>
-<br/>                <div id="36154b7601f24edc9990d464029361f6" class="chart-container" style="width:900px; height:500px;"></div>
+<br/>                <div id="2f61e570bfc04af883e1837a280a3565" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_36154b7601f24edc9990d464029361f6 = echarts.init(
-            document.getElementById('36154b7601f24edc9990d464029361f6'), 'white', {renderer: 'canvas'});
-        var option_36154b7601f24edc9990d464029361f6 = {
+        var chart_2f61e570bfc04af883e1837a280a3565 = echarts.init(
+            document.getElementById('2f61e570bfc04af883e1837a280a3565'), 'white', {renderer: 'canvas'});
+        var option_2f61e570bfc04af883e1837a280a3565 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -3185,6 +3084,36 @@
             },
             "zlevel": 0,
             "z": 0
+        },
+        {
+            "type": "scatter",
+            "name": "CU2507",
+            "symbolSize": 10,
+            "data": [],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(params){return params.value[2];}
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
         },
         {
             "type": "scatter",
@@ -5402,137 +5331,6 @@
                 "borderWidth": 0,
                 "padding": 5
             }
-        },
-        {
-            "type": "scatter",
-            "name": "CU2401",
-            "symbolSize": 10,
-            "data": [
-                [
-                    54.9463243873979,
-                    150.0,
-                    "12-18"
-                ],
-                [
-                    54.07386130488305,
-                    130.0,
-                    "12-19"
-                ],
-                [
-                    55.7001414427157,
-                    90.0,
-                    "12-20"
-                ],
-                [
-                    61.07728867262646,
-                    10.0,
-                    "12-21"
-                ],
-                [
-                    76.70127418593677,
-                    10.0,
-                    "12-22"
-                ],
-                [
-                    184.8870056497175,
-                    60.0,
-                    "12-25"
-                ],
-                [
-                    167.92372881355934,
-                    10.0,
-                    "12-26"
-                ],
-                [
-                    95.20652728199899,
-                    20.0,
-                    "12-27"
-                ],
-                [
-                    54.829565217391306,
-                    60.0,
-                    "12-28"
-                ],
-                [
-                    45.46929897942111,
-                    310.0,
-                    "12-29"
-                ],
-                [
-                    57.88832133735779,
-                    70.0,
-                    "01-02"
-                ],
-                [
-                    55.97585017249877,
-                    70.0,
-                    "01-03"
-                ],
-                [
-                    56.20121422376409,
-                    90.0,
-                    "01-04"
-                ],
-                [
-                    58.64944408109876,
-                    70.0,
-                    "01-05"
-                ],
-                [
-                    114.05797101449275,
-                    80.0,
-                    "01-08"
-                ],
-                [
-                    58.43487394957983,
-                    140.0,
-                    "01-09"
-                ],
-                [
-                    40.048348106365836,
-                    240.0,
-                    "01-10"
-                ],
-                [
-                    26.83319903303787,
-                    170.0,
-                    "01-11"
-                ],
-                [
-                    6.195881113971448,
-                    140.0,
-                    "01-12"
-                ],
-                [
-                    1.032484896503912,
-                    100.0,
-                    "01-15"
-                ]
-            ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8,
-                "formatter": function(params){return params.value[2];}
-            },
-            "tooltip": {
-                "show": true,
-                "trigger": "item",
-                "triggerOn": "mousemove|click",
-                "axisPointer": {
-                    "type": "line"
-                },
-                "showContent": true,
-                "alwaysShowContent": false,
-                "showDelay": 0,
-                "hideDelay": 100,
-                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
-                "textStyle": {
-                    "fontSize": 14
-                },
-                "borderWidth": 0,
-                "padding": 5
-            }
         }
     ],
     "legend": [
@@ -5541,6 +5339,7 @@
                 "high",
                 "mid",
                 "low",
+                "CU2507",
                 "CU2506",
                 "CU2505",
                 "CU2504",
@@ -5557,14 +5356,14 @@
                 "CU2405",
                 "CU2404",
                 "CU2403",
-                "CU2402",
-                "CU2401"
+                "CU2402"
             ],
             "selected": {
                 "high": true,
                 "mid": true,
                 "low": true,
-                "CU2506": true,
+                "CU2507": true,
+                "CU2506": false,
                 "CU2505": false,
                 "CU2504": false,
                 "CU2503": false,
@@ -5580,8 +5379,7 @@
                 "CU2405": false,
                 "CU2404": false,
                 "CU2403": false,
-                "CU2402": false,
-                "CU2401": false
+                "CU2402": false
             },
             "show": true,
             "padding": 5,
@@ -5740,13 +5538,13 @@
         }
     }
 };
-        chart_36154b7601f24edc9990d464029361f6.setOption(option_36154b7601f24edc9990d464029361f6);
+        chart_2f61e570bfc04af883e1837a280a3565.setOption(option_2f61e570bfc04af883e1837a280a3565);
     </script>
-<br/>                <div id="62992bb1b41349588001c260df6f7a0e" class="chart-container" style="width:900px; height:500px;"></div>
+<br/>                <div id="3a23b0ab97184836a1902df633f5b62d" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_62992bb1b41349588001c260df6f7a0e = echarts.init(
-            document.getElementById('62992bb1b41349588001c260df6f7a0e'), 'white', {renderer: 'canvas'});
-        var option_62992bb1b41349588001c260df6f7a0e = {
+        var chart_3a23b0ab97184836a1902df633f5b62d = echarts.init(
+            document.getElementById('3a23b0ab97184836a1902df633f5b62d'), 'white', {renderer: 'canvas'});
+        var option_3a23b0ab97184836a1902df633f5b62d = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -6051,6 +5849,36 @@
             },
             "zlevel": 0,
             "z": 0
+        },
+        {
+            "type": "scatter",
+            "name": "PB2507",
+            "symbolSize": 10,
+            "data": [],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(params){return params.value[2];}
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
         },
         {
             "type": "scatter",
@@ -8268,137 +8096,6 @@
                 "borderWidth": 0,
                 "padding": 5
             }
-        },
-        {
-            "type": "scatter",
-            "name": "PB2401",
-            "symbolSize": 10,
-            "data": [
-                [
-                    2.0771568995124645,
-                    25.0,
-                    "12-18"
-                ],
-                [
-                    1.8390601015468178,
-                    5.0,
-                    "12-19"
-                ],
-                [
-                    1.6176888266146592,
-                    35.0,
-                    "12-20"
-                ],
-                [
-                    1.5375828408511603,
-                    10.0,
-                    "12-21"
-                ],
-                [
-                    1.5058499388812356,
-                    15.0,
-                    "12-22"
-                ],
-                [
-                    1.4401353147275584,
-                    15.0,
-                    "12-25"
-                ],
-                [
-                    1.350105031509453,
-                    5.0,
-                    "12-26"
-                ],
-                [
-                    1.1448231183006792,
-                    -5.0,
-                    "12-27"
-                ],
-                [
-                    1.0597788999590556,
-                    -15.0,
-                    "12-28"
-                ],
-                [
-                    0.9988935974782372,
-                    5.0,
-                    "12-29"
-                ],
-                [
-                    0.9354388635210553,
-                    -10.0,
-                    "01-02"
-                ],
-                [
-                    0.9167254311173794,
-                    -30.0,
-                    "01-03"
-                ],
-                [
-                    0.8667931850651428,
-                    -10.0,
-                    "01-04"
-                ],
-                [
-                    0.8285701866863713,
-                    -15.0,
-                    "01-05"
-                ],
-                [
-                    0.7535913763501619,
-                    -10.0,
-                    "01-08"
-                ],
-                [
-                    0.6909841999914825,
-                    -10.0,
-                    "01-09"
-                ],
-                [
-                    0.6734930856117386,
-                    -5.0,
-                    "01-10"
-                ],
-                [
-                    0.611206425953365,
-                    10.0,
-                    "01-11"
-                ],
-                [
-                    0.58817264682532,
-                    -25.0,
-                    "01-12"
-                ],
-                [
-                    0.5262383761787249,
-                    30.0,
-                    "01-15"
-                ]
-            ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8,
-                "formatter": function(params){return params.value[2];}
-            },
-            "tooltip": {
-                "show": true,
-                "trigger": "item",
-                "triggerOn": "mousemove|click",
-                "axisPointer": {
-                    "type": "line"
-                },
-                "showContent": true,
-                "alwaysShowContent": false,
-                "showDelay": 0,
-                "hideDelay": 100,
-                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
-                "textStyle": {
-                    "fontSize": 14
-                },
-                "borderWidth": 0,
-                "padding": 5
-            }
         }
     ],
     "legend": [
@@ -8407,6 +8104,7 @@
                 "high",
                 "mid",
                 "low",
+                "PB2507",
                 "PB2506",
                 "PB2505",
                 "PB2504",
@@ -8423,14 +8121,14 @@
                 "PB2405",
                 "PB2404",
                 "PB2403",
-                "PB2402",
-                "PB2401"
+                "PB2402"
             ],
             "selected": {
                 "high": true,
                 "mid": true,
                 "low": true,
-                "PB2506": true,
+                "PB2507": true,
+                "PB2506": false,
                 "PB2505": false,
                 "PB2504": false,
                 "PB2503": false,
@@ -8446,8 +8144,7 @@
                 "PB2405": false,
                 "PB2404": false,
                 "PB2403": false,
-                "PB2402": false,
-                "PB2401": false
+                "PB2402": false
             },
             "show": true,
             "padding": 5,
@@ -8606,13 +8303,13 @@
         }
     }
 };
-        chart_62992bb1b41349588001c260df6f7a0e.setOption(option_62992bb1b41349588001c260df6f7a0e);
+        chart_3a23b0ab97184836a1902df633f5b62d.setOption(option_3a23b0ab97184836a1902df633f5b62d);
     </script>
-<br/>                <div id="69aecedb9f104de1a35af2cffb90b97c" class="chart-container" style="width:900px; height:500px;"></div>
+<br/>                <div id="69e486ca57cb4e969c1b5aeeb84f6f41" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_69aecedb9f104de1a35af2cffb90b97c = echarts.init(
-            document.getElementById('69aecedb9f104de1a35af2cffb90b97c'), 'white', {renderer: 'canvas'});
-        var option_69aecedb9f104de1a35af2cffb90b97c = {
+        var chart_69e486ca57cb4e969c1b5aeeb84f6f41 = echarts.init(
+            document.getElementById('69e486ca57cb4e969c1b5aeeb84f6f41'), 'white', {renderer: 'canvas'});
+        var option_69e486ca57cb4e969c1b5aeeb84f6f41 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -8917,6 +8614,36 @@
             },
             "zlevel": 0,
             "z": 0
+        },
+        {
+            "type": "scatter",
+            "name": "ZN2507",
+            "symbolSize": 10,
+            "data": [],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(params){return params.value[2];}
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
         },
         {
             "type": "scatter",
@@ -11134,137 +10861,6 @@
                 "borderWidth": 0,
                 "padding": 5
             }
-        },
-        {
-            "type": "scatter",
-            "name": "ZN2401",
-            "symbolSize": 10,
-            "data": [
-                [
-                    37.23337897459303,
-                    85.0,
-                    "12-18"
-                ],
-                [
-                    33.4669630538096,
-                    70.0,
-                    "12-19"
-                ],
-                [
-                    32.4718440073962,
-                    45.0,
-                    "12-20"
-                ],
-                [
-                    30.546781115879828,
-                    50.0,
-                    "12-21"
-                ],
-                [
-                    31.333268595843855,
-                    40.0,
-                    "12-22"
-                ],
-                [
-                    33.697766968826,
-                    55.0,
-                    "12-25"
-                ],
-                [
-                    32.03564500484966,
-                    40.0,
-                    "12-26"
-                ],
-                [
-                    27.048148148148147,
-                    30.0,
-                    "12-27"
-                ],
-                [
-                    20.2536563071298,
-                    35.0,
-                    "12-28"
-                ],
-                [
-                    14.899491937265298,
-                    135.0,
-                    "12-29"
-                ],
-                [
-                    13.349622390048868,
-                    45.0,
-                    "01-02"
-                ],
-                [
-                    10.939825643206463,
-                    50.0,
-                    "01-03"
-                ],
-                [
-                    8.760365724005954,
-                    55.0,
-                    "01-04"
-                ],
-                [
-                    6.796690307328605,
-                    105.0,
-                    "01-05"
-                ],
-                [
-                    5.178400383141763,
-                    100.0,
-                    "01-08"
-                ],
-                [
-                    2.437898623699228,
-                    85.0,
-                    "01-09"
-                ],
-                [
-                    1.538923182441701,
-                    50.0,
-                    "01-10"
-                ],
-                [
-                    0.9155041217501585,
-                    35.0,
-                    "01-11"
-                ],
-                [
-                    0.7232511862850145,
-                    45.0,
-                    "01-12"
-                ],
-                [
-                    0.5599139567252942,
-                    -45.0,
-                    "01-15"
-                ]
-            ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8,
-                "formatter": function(params){return params.value[2];}
-            },
-            "tooltip": {
-                "show": true,
-                "trigger": "item",
-                "triggerOn": "mousemove|click",
-                "axisPointer": {
-                    "type": "line"
-                },
-                "showContent": true,
-                "alwaysShowContent": false,
-                "showDelay": 0,
-                "hideDelay": 100,
-                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
-                "textStyle": {
-                    "fontSize": 14
-                },
-                "borderWidth": 0,
-                "padding": 5
-            }
         }
     ],
     "legend": [
@@ -11273,6 +10869,7 @@
                 "high",
                 "mid",
                 "low",
+                "ZN2507",
                 "ZN2506",
                 "ZN2505",
                 "ZN2504",
@@ -11289,14 +10886,14 @@
                 "ZN2405",
                 "ZN2404",
                 "ZN2403",
-                "ZN2402",
-                "ZN2401"
+                "ZN2402"
             ],
             "selected": {
                 "high": true,
                 "mid": true,
                 "low": true,
-                "ZN2506": true,
+                "ZN2507": true,
+                "ZN2506": false,
                 "ZN2505": false,
                 "ZN2504": false,
                 "ZN2503": false,
@@ -11312,8 +10909,7 @@
                 "ZN2405": false,
                 "ZN2404": false,
                 "ZN2403": false,
-                "ZN2402": false,
-                "ZN2401": false
+                "ZN2402": false
             },
             "show": true,
             "padding": 5,
@@ -11472,13 +11068,13 @@
         }
     }
 };
-        chart_69aecedb9f104de1a35af2cffb90b97c.setOption(option_69aecedb9f104de1a35af2cffb90b97c);
+        chart_69e486ca57cb4e969c1b5aeeb84f6f41.setOption(option_69e486ca57cb4e969c1b5aeeb84f6f41);
     </script>
-<br/>                <div id="4ca4ca42240b4021b61abec76f6104c2" class="chart-container" style="width:900px; height:500px;"></div>
+<br/>                <div id="712d2e9418e74733bcfa2c04afa3a257" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_4ca4ca42240b4021b61abec76f6104c2 = echarts.init(
-            document.getElementById('4ca4ca42240b4021b61abec76f6104c2'), 'white', {renderer: 'canvas'});
-        var option_4ca4ca42240b4021b61abec76f6104c2 = {
+        var chart_712d2e9418e74733bcfa2c04afa3a257 = echarts.init(
+            document.getElementById('712d2e9418e74733bcfa2c04afa3a257'), 'white', {renderer: 'canvas'});
+        var option_712d2e9418e74733bcfa2c04afa3a257 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -11783,6 +11379,36 @@
             },
             "zlevel": 0,
             "z": 0
+        },
+        {
+            "type": "scatter",
+            "name": "NI2507",
+            "symbolSize": 10,
+            "data": [],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(params){return params.value[2];}
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
         },
         {
             "type": "scatter",
@@ -14000,137 +13626,6 @@
                 "borderWidth": 0,
                 "padding": 5
             }
-        },
-        {
-            "type": "scatter",
-            "name": "NI2401",
-            "symbolSize": 10,
-            "data": [
-                [
-                    7.545716862037872,
-                    100.0,
-                    "12-18"
-                ],
-                [
-                    7.138031238648747,
-                    40.0,
-                    "12-19"
-                ],
-                [
-                    6.790136789056875,
-                    120.0,
-                    "12-20"
-                ],
-                [
-                    6.427620176958862,
-                    0.0,
-                    "12-21"
-                ],
-                [
-                    5.553290252116137,
-                    50.0,
-                    "12-22"
-                ],
-                [
-                    4.786773401255345,
-                    -80.0,
-                    "12-25"
-                ],
-                [
-                    3.0565452450589383,
-                    -10.0,
-                    "12-26"
-                ],
-                [
-                    2.246215139442231,
-                    -230.0,
-                    "12-27"
-                ],
-                [
-                    1.5053563523683045,
-                    -390.0,
-                    "12-28"
-                ],
-                [
-                    0.7201132643128927,
-                    -1340.0,
-                    "12-29"
-                ],
-                [
-                    0.6303730017761989,
-                    -180.0,
-                    "01-02"
-                ],
-                [
-                    0.5259045354170205,
-                    -400.0,
-                    "01-03"
-                ],
-                [
-                    0.47228549734244496,
-                    -380.0,
-                    "01-04"
-                ],
-                [
-                    0.4304358952486565,
-                    -400.0,
-                    "01-05"
-                ],
-                [
-                    0.3797729618163055,
-                    -370.0,
-                    "01-08"
-                ],
-                [
-                    0.3691031622602385,
-                    150.0,
-                    "01-09"
-                ],
-                [
-                    0.367601246105919,
-                    -220.0,
-                    "01-10"
-                ],
-                [
-                    0.34631360332294914,
-                    -470.0,
-                    "01-11"
-                ],
-                [
-                    0.3461139896373057,
-                    -590.0,
-                    "01-12"
-                ],
-                [
-                    0.3359959640124443,
-                    -500.0,
-                    "01-15"
-                ]
-            ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8,
-                "formatter": function(params){return params.value[2];}
-            },
-            "tooltip": {
-                "show": true,
-                "trigger": "item",
-                "triggerOn": "mousemove|click",
-                "axisPointer": {
-                    "type": "line"
-                },
-                "showContent": true,
-                "alwaysShowContent": false,
-                "showDelay": 0,
-                "hideDelay": 100,
-                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
-                "textStyle": {
-                    "fontSize": 14
-                },
-                "borderWidth": 0,
-                "padding": 5
-            }
         }
     ],
     "legend": [
@@ -14139,6 +13634,7 @@
                 "high",
                 "mid",
                 "low",
+                "NI2507",
                 "NI2506",
                 "NI2505",
                 "NI2504",
@@ -14155,14 +13651,14 @@
                 "NI2405",
                 "NI2404",
                 "NI2403",
-                "NI2402",
-                "NI2401"
+                "NI2402"
             ],
             "selected": {
                 "high": true,
                 "mid": true,
                 "low": true,
-                "NI2506": true,
+                "NI2507": true,
+                "NI2506": false,
                 "NI2505": false,
                 "NI2504": false,
                 "NI2503": false,
@@ -14178,8 +13674,7 @@
                 "NI2405": false,
                 "NI2404": false,
                 "NI2403": false,
-                "NI2402": false,
-                "NI2401": false
+                "NI2402": false
             },
             "show": true,
             "padding": 5,
@@ -14338,13 +13833,13 @@
         }
     }
 };
-        chart_4ca4ca42240b4021b61abec76f6104c2.setOption(option_4ca4ca42240b4021b61abec76f6104c2);
+        chart_712d2e9418e74733bcfa2c04afa3a257.setOption(option_712d2e9418e74733bcfa2c04afa3a257);
     </script>
-<br/>                <div id="403d92c8b4ad4131a6baa4806965df3a" class="chart-container" style="width:900px; height:500px;"></div>
+<br/>                <div id="8896852e979a4f0499e7886b15bffe0e" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_403d92c8b4ad4131a6baa4806965df3a = echarts.init(
-            document.getElementById('403d92c8b4ad4131a6baa4806965df3a'), 'white', {renderer: 'canvas'});
-        var option_403d92c8b4ad4131a6baa4806965df3a = {
+        var chart_8896852e979a4f0499e7886b15bffe0e = echarts.init(
+            document.getElementById('8896852e979a4f0499e7886b15bffe0e'), 'white', {renderer: 'canvas'});
+        var option_8896852e979a4f0499e7886b15bffe0e = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -14649,6 +14144,36 @@
             },
             "zlevel": 0,
             "z": 0
+        },
+        {
+            "type": "scatter",
+            "name": "SN2507",
+            "symbolSize": 10,
+            "data": [],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(params){return params.value[2];}
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
         },
         {
             "type": "scatter",
@@ -16866,137 +16391,6 @@
                 "borderWidth": 0,
                 "padding": 5
             }
-        },
-        {
-            "type": "scatter",
-            "name": "SN2401",
-            "symbolSize": 10,
-            "data": [
-                [
-                    4.800039556962025,
-                    80.0,
-                    "12-18"
-                ],
-                [
-                    4.515085351329893,
-                    100.0,
-                    "12-19"
-                ],
-                [
-                    3.899819313390885,
-                    10.0,
-                    "12-20"
-                ],
-                [
-                    2.906779661016949,
-                    -170.0,
-                    "12-21"
-                ],
-                [
-                    2.28380187416332,
-                    -500.0,
-                    "12-22"
-                ],
-                [
-                    1.5960437272254033,
-                    -360.0,
-                    "12-25"
-                ],
-                [
-                    1.1235121614628256,
-                    -180.0,
-                    "12-26"
-                ],
-                [
-                    0.7906577365619096,
-                    -510.0,
-                    "12-27"
-                ],
-                [
-                    0.584092792046396,
-                    -270.0,
-                    "12-28"
-                ],
-                [
-                    0.42038531203688456,
-                    -490.0,
-                    "12-29"
-                ],
-                [
-                    0.4006584362139918,
-                    -320.0,
-                    "01-02"
-                ],
-                [
-                    0.3678885387294742,
-                    -320.0,
-                    "01-03"
-                ],
-                [
-                    0.3441845247832488,
-                    -290.0,
-                    "01-04"
-                ],
-                [
-                    0.2817317153164972,
-                    -110.0,
-                    "01-05"
-                ],
-                [
-                    0.2163045254043457,
-                    -720.0,
-                    "01-08"
-                ],
-                [
-                    0.21108884435537742,
-                    -320.0,
-                    "01-09"
-                ],
-                [
-                    0.20334402972470866,
-                    50.0,
-                    "01-10"
-                ],
-                [
-                    0.20165512582334066,
-                    50.0,
-                    "01-11"
-                ],
-                [
-                    0.19820419022281344,
-                    -250.0,
-                    "01-12"
-                ],
-                [
-                    0.19509787794045072,
-                    -980.0,
-                    "01-15"
-                ]
-            ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8,
-                "formatter": function(params){return params.value[2];}
-            },
-            "tooltip": {
-                "show": true,
-                "trigger": "item",
-                "triggerOn": "mousemove|click",
-                "axisPointer": {
-                    "type": "line"
-                },
-                "showContent": true,
-                "alwaysShowContent": false,
-                "showDelay": 0,
-                "hideDelay": 100,
-                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
-                "textStyle": {
-                    "fontSize": 14
-                },
-                "borderWidth": 0,
-                "padding": 5
-            }
         }
     ],
     "legend": [
@@ -17005,6 +16399,7 @@
                 "high",
                 "mid",
                 "low",
+                "SN2507",
                 "SN2506",
                 "SN2505",
                 "SN2504",
@@ -17021,14 +16416,14 @@
                 "SN2405",
                 "SN2404",
                 "SN2403",
-                "SN2402",
-                "SN2401"
+                "SN2402"
             ],
             "selected": {
                 "high": true,
                 "mid": true,
                 "low": true,
-                "SN2506": true,
+                "SN2507": true,
+                "SN2506": false,
                 "SN2505": false,
                 "SN2504": false,
                 "SN2503": false,
@@ -17044,8 +16439,7 @@
                 "SN2405": false,
                 "SN2404": false,
                 "SN2403": false,
-                "SN2402": false,
-                "SN2401": false
+                "SN2402": false
             },
             "show": true,
             "padding": 5,
@@ -17204,13 +16598,13 @@
         }
     }
 };
-        chart_403d92c8b4ad4131a6baa4806965df3a.setOption(option_403d92c8b4ad4131a6baa4806965df3a);
+        chart_8896852e979a4f0499e7886b15bffe0e.setOption(option_8896852e979a4f0499e7886b15bffe0e);
     </script>
-<br/>                <div id="521a4531ce59456c86c972a05e8bbc7f" class="chart-container" style="width:900px; height:500px;"></div>
+<br/>                <div id="134da4c3dd29467dbd0f8d2727975e5c" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_521a4531ce59456c86c972a05e8bbc7f = echarts.init(
-            document.getElementById('521a4531ce59456c86c972a05e8bbc7f'), 'white', {renderer: 'canvas'});
-        var option_521a4531ce59456c86c972a05e8bbc7f = {
+        var chart_134da4c3dd29467dbd0f8d2727975e5c = echarts.init(
+            document.getElementById('134da4c3dd29467dbd0f8d2727975e5c'), 'white', {renderer: 'canvas'});
+        var option_134da4c3dd29467dbd0f8d2727975e5c = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -17515,6 +16909,36 @@
             },
             "zlevel": 0,
             "z": 0
+        },
+        {
+            "type": "scatter",
+            "name": "SS2507",
+            "symbolSize": 10,
+            "data": [],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(params){return params.value[2];}
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
         },
         {
             "type": "scatter",
@@ -19732,137 +19156,6 @@
                 "borderWidth": 0,
                 "padding": 5
             }
-        },
-        {
-            "type": "scatter",
-            "name": "SS2401",
-            "symbolSize": 10,
-            "data": [
-                [
-                    2.995657167468236,
-                    -110.0,
-                    "12-18"
-                ],
-                [
-                    2.5335055270572937,
-                    -135.0,
-                    "12-19"
-                ],
-                [
-                    2.3772527607865674,
-                    -175.0,
-                    "12-20"
-                ],
-                [
-                    1.8644032964097084,
-                    -155.0,
-                    "12-21"
-                ],
-                [
-                    1.663542160235677,
-                    -145.0,
-                    "12-22"
-                ],
-                [
-                    1.3594356982212226,
-                    -185.0,
-                    "12-25"
-                ],
-                [
-                    0.8912459397682159,
-                    -195.0,
-                    "12-26"
-                ],
-                [
-                    0.5951298572953314,
-                    -185.0,
-                    "12-27"
-                ],
-                [
-                    0.49662222047151044,
-                    -220.0,
-                    "12-28"
-                ],
-                [
-                    0.3095148996513895,
-                    -105.0,
-                    "12-29"
-                ],
-                [
-                    0.26224877369114197,
-                    -100.0,
-                    "01-02"
-                ],
-                [
-                    0.2098142627837652,
-                    -90.0,
-                    "01-03"
-                ],
-                [
-                    0.19178393100317748,
-                    -30.0,
-                    "01-04"
-                ],
-                [
-                    0.16928291454431843,
-                    -60.0,
-                    "01-05"
-                ],
-                [
-                    0.15064480541712633,
-                    -145.0,
-                    "01-08"
-                ],
-                [
-                    0.1442973680160074,
-                    -70.0,
-                    "01-09"
-                ],
-                [
-                    0.13726835964310227,
-                    -85.0,
-                    "01-10"
-                ],
-                [
-                    0.12666817462112645,
-                    -95.0,
-                    "01-11"
-                ],
-                [
-                    0.12567460467222705,
-                    -180.0,
-                    "01-12"
-                ],
-                [
-                    0.1217335762995247,
-                    -15.0,
-                    "01-15"
-                ]
-            ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8,
-                "formatter": function(params){return params.value[2];}
-            },
-            "tooltip": {
-                "show": true,
-                "trigger": "item",
-                "triggerOn": "mousemove|click",
-                "axisPointer": {
-                    "type": "line"
-                },
-                "showContent": true,
-                "alwaysShowContent": false,
-                "showDelay": 0,
-                "hideDelay": 100,
-                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
-                "textStyle": {
-                    "fontSize": 14
-                },
-                "borderWidth": 0,
-                "padding": 5
-            }
         }
     ],
     "legend": [
@@ -19871,6 +19164,7 @@
                 "high",
                 "mid",
                 "low",
+                "SS2507",
                 "SS2506",
                 "SS2505",
                 "SS2504",
@@ -19887,14 +19181,14 @@
                 "SS2405",
                 "SS2404",
                 "SS2403",
-                "SS2402",
-                "SS2401"
+                "SS2402"
             ],
             "selected": {
                 "high": true,
                 "mid": true,
                 "low": true,
-                "SS2506": true,
+                "SS2507": true,
+                "SS2506": false,
                 "SS2505": false,
                 "SS2504": false,
                 "SS2503": false,
@@ -19910,8 +19204,7 @@
                 "SS2405": false,
                 "SS2404": false,
                 "SS2403": false,
-                "SS2402": false,
-                "SS2401": false
+                "SS2402": false
             },
             "show": true,
             "padding": 5,
@@ -20070,7 +19363,7 @@
         }
     }
 };
-        chart_521a4531ce59456c86c972a05e8bbc7f.setOption(option_521a4531ce59456c86c972a05e8bbc7f);
+        chart_134da4c3dd29467dbd0f8d2727975e5c.setOption(option_134da4c3dd29467dbd0f8d2727975e5c);
     </script>
 <br/>    </div>
     <script>
