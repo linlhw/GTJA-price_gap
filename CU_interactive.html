@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="5d8dae79eab147c9b4c4dd9c1f9244c1" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="7feb781903df4bd487852386a9656764" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_5d8dae79eab147c9b4c4dd9c1f9244c1 = echarts.init(
-            document.getElementById('5d8dae79eab147c9b4c4dd9c1f9244c1'), 'white', {renderer: 'canvas'});
-        var option_5d8dae79eab147c9b4c4dd9c1f9244c1 = {
+        var chart_7feb781903df4bd487852386a9656764 = echarts.init(
+            document.getElementById('7feb781903df4bd487852386a9656764'), 'white', {renderer: 'canvas'});
+        var option_7feb781903df4bd487852386a9656764 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -316,6 +316,36 @@
             },
             "zlevel": 0,
             "z": 0
+        },
+        {
+            "type": "scatter",
+            "name": "CU2510",
+            "symbolSize": 10,
+            "data": [],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(params){return params.value[2];}
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
         },
         {
             "type": "scatter",
@@ -2573,132 +2603,6 @@
                 "borderWidth": 0,
                 "padding": 5
             }
-        },
-        {
-            "type": "scatter",
-            "name": "CU2404",
-            "symbolSize": 10,
-            "data": [
-                [
-                    3.015996736549192,
-                    -110.0,
-                    "03-18"
-                ],
-                [
-                    2.777915439854629,
-                    -150.0,
-                    "03-19"
-                ],
-                [
-                    2.610682974769147,
-                    -110.0,
-                    "03-20"
-                ],
-                [
-                    2.485941349823663,
-                    -130.0,
-                    "03-21"
-                ],
-                [
-                    2.281372761670643,
-                    -90.0,
-                    "03-22"
-                ],
-                [
-                    2.138064904305306,
-                    -140.0,
-                    "03-25"
-                ],
-                [
-                    1.8731957710265192,
-                    -100.0,
-                    "03-26"
-                ],
-                [
-                    1.683865152832002,
-                    -90.0,
-                    "03-27"
-                ],
-                [
-                    1.5337224827183953,
-                    -120.0,
-                    "03-28"
-                ],
-                [
-                    1.3349636346377252,
-                    -100.0,
-                    "03-29"
-                ],
-                [
-                    1.2184766633209063,
-                    -120.0,
-                    "04-01"
-                ],
-                [
-                    1.0665785362336258,
-                    -100.0,
-                    "04-02"
-                ],
-                [
-                    0.9109819166901211,
-                    -160.0,
-                    "04-03"
-                ],
-                [
-                    0.7595876052566677,
-                    -170.0,
-                    "04-08"
-                ],
-                [
-                    0.608557702188881,
-                    -170.0,
-                    "04-09"
-                ],
-                [
-                    0.5264233987451139,
-                    -290.0,
-                    "04-10"
-                ],
-                [
-                    0.37799970718332543,
-                    -270.0,
-                    "04-11"
-                ],
-                [
-                    0.29419453218603636,
-                    -250.0,
-                    "04-12"
-                ],
-                [
-                    0.25911128307907677,
-                    -210.0,
-                    "04-15"
-                ]
-            ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8,
-                "formatter": function(params){return params.value[2];}
-            },
-            "tooltip": {
-                "show": true,
-                "trigger": "item",
-                "triggerOn": "mousemove|click",
-                "axisPointer": {
-                    "type": "line"
-                },
-                "showContent": true,
-                "alwaysShowContent": false,
-                "showDelay": 0,
-                "hideDelay": 100,
-                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
-                "textStyle": {
-                    "fontSize": 14
-                },
-                "borderWidth": 0,
-                "padding": 5
-            }
         }
     ],
     "legend": [
@@ -2707,6 +2611,7 @@
                 "high",
                 "mid",
                 "low",
+                "CU2510",
                 "CU2509",
                 "CU2508",
                 "CU2507",
@@ -2723,14 +2628,14 @@
                 "CU2408",
                 "CU2407",
                 "CU2406",
-                "CU2405",
-                "CU2404"
+                "CU2405"
             ],
             "selected": {
                 "high": true,
                 "mid": true,
                 "low": true,
-                "CU2509": true,
+                "CU2510": true,
+                "CU2509": false,
                 "CU2508": false,
                 "CU2507": false,
                 "CU2506": false,
@@ -2746,8 +2651,7 @@
                 "CU2408": false,
                 "CU2407": false,
                 "CU2406": false,
-                "CU2405": false,
-                "CU2404": false
+                "CU2405": false
             },
             "show": true,
             "padding": 5,
@@ -2906,7 +2810,7 @@
         }
     }
 };
-        chart_5d8dae79eab147c9b4c4dd9c1f9244c1.setOption(option_5d8dae79eab147c9b4c4dd9c1f9244c1);
+        chart_7feb781903df4bd487852386a9656764.setOption(option_7feb781903df4bd487852386a9656764);
     </script>
 </body>
 </html>
