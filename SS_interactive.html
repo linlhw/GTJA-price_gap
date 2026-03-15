@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="b6081fcbcf7742f28d777f143b20f1df" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="ccf2e10a1e2643099c53e5cc46d81928" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_b6081fcbcf7742f28d777f143b20f1df = echarts.init(
-            document.getElementById('b6081fcbcf7742f28d777f143b20f1df'), 'white', {renderer: 'canvas'});
-        var option_b6081fcbcf7742f28d777f143b20f1df = {
+        var chart_ccf2e10a1e2643099c53e5cc46d81928 = echarts.init(
+            document.getElementById('ccf2e10a1e2643099c53e5cc46d81928'), 'white', {renderer: 'canvas'});
+        var option_ccf2e10a1e2643099c53e5cc46d81928 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -316,6 +316,36 @@
             },
             "zlevel": 0,
             "z": 0
+        },
+        {
+            "type": "scatter",
+            "name": "SS2604",
+            "symbolSize": 10,
+            "data": [],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(params){return params.value[2];}
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
         },
         {
             "type": "scatter",
@@ -2553,107 +2583,6 @@
                 "borderWidth": 0,
                 "padding": 5
             }
-        },
-        {
-            "type": "scatter",
-            "name": "SS2410",
-            "symbolSize": 10,
-            "data": [
-                [
-                    0.7766005410279531,
-                    -35.0,
-                    "09-19"
-                ],
-                [
-                    0.687358712360973,
-                    -40.0,
-                    "09-20"
-                ],
-                [
-                    0.6359182918938904,
-                    -30.0,
-                    "09-23"
-                ],
-                [
-                    0.5605061735292475,
-                    -40.0,
-                    "09-24"
-                ],
-                [
-                    0.4455296344782768,
-                    -30.0,
-                    "09-25"
-                ],
-                [
-                    0.3883389070456791,
-                    -35.0,
-                    "09-26"
-                ],
-                [
-                    0.281855492984633,
-                    -35.0,
-                    "09-27"
-                ],
-                [
-                    0.1625408915580294,
-                    -30.0,
-                    "09-30"
-                ],
-                [
-                    0.15418738946483881,
-                    -20.0,
-                    "10-08"
-                ],
-                [
-                    0.15377993426201284,
-                    -35.0,
-                    "10-09"
-                ],
-                [
-                    0.149299974826204,
-                    20.0,
-                    "10-10"
-                ],
-                [
-                    0.1440715710385159,
-                    -25.0,
-                    "10-11"
-                ],
-                [
-                    0.14289020016198078,
-                    -15.0,
-                    "10-14"
-                ],
-                [
-                    0.14289020016198078,
-                    95.0,
-                    "10-15"
-                ]
-            ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8,
-                "formatter": function(params){return params.value[2];}
-            },
-            "tooltip": {
-                "show": true,
-                "trigger": "item",
-                "triggerOn": "mousemove|click",
-                "axisPointer": {
-                    "type": "line"
-                },
-                "showContent": true,
-                "alwaysShowContent": false,
-                "showDelay": 0,
-                "hideDelay": 100,
-                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
-                "textStyle": {
-                    "fontSize": 14
-                },
-                "borderWidth": 0,
-                "padding": 5
-            }
         }
     ],
     "legend": [
@@ -2662,6 +2591,7 @@
                 "high",
                 "mid",
                 "low",
+                "SS2604",
                 "SS2603",
                 "SS2602",
                 "SS2601",
@@ -2678,14 +2608,14 @@
                 "SS2502",
                 "SS2501",
                 "SS2412",
-                "SS2411",
-                "SS2410"
+                "SS2411"
             ],
             "selected": {
                 "high": true,
                 "mid": true,
                 "low": true,
-                "SS2603": true,
+                "SS2604": true,
+                "SS2603": false,
                 "SS2602": false,
                 "SS2601": false,
                 "SS2512": false,
@@ -2701,8 +2631,7 @@
                 "SS2502": false,
                 "SS2501": false,
                 "SS2412": false,
-                "SS2411": false,
-                "SS2410": false
+                "SS2411": false
             },
             "show": true,
             "padding": 5,
@@ -2861,7 +2790,7 @@
         }
     }
 };
-        chart_b6081fcbcf7742f28d777f143b20f1df.setOption(option_b6081fcbcf7742f28d777f143b20f1df);
+        chart_ccf2e10a1e2643099c53e5cc46d81928.setOption(option_ccf2e10a1e2643099c53e5cc46d81928);
     </script>
 </body>
 </html>

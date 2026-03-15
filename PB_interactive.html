@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="c8b4127541ed49878a65759c36cdee27" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="94ec5822f1524c32bfcaffedd6d2b2d6" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_c8b4127541ed49878a65759c36cdee27 = echarts.init(
-            document.getElementById('c8b4127541ed49878a65759c36cdee27'), 'white', {renderer: 'canvas'});
-        var option_c8b4127541ed49878a65759c36cdee27 = {
+        var chart_94ec5822f1524c32bfcaffedd6d2b2d6 = echarts.init(
+            document.getElementById('94ec5822f1524c32bfcaffedd6d2b2d6'), 'white', {renderer: 'canvas'});
+        var option_94ec5822f1524c32bfcaffedd6d2b2d6 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -316,6 +316,36 @@
             },
             "zlevel": 0,
             "z": 0
+        },
+        {
+            "type": "scatter",
+            "name": "PB2604",
+            "symbolSize": 10,
+            "data": [],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(params){return params.value[2];}
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
         },
         {
             "type": "scatter",
@@ -2553,107 +2583,6 @@
                 "borderWidth": 0,
                 "padding": 5
             }
-        },
-        {
-            "type": "scatter",
-            "name": "PB2410",
-            "symbolSize": 10,
-            "data": [
-                [
-                    3.79581690061868,
-                    -15.0,
-                    "09-19"
-                ],
-                [
-                    3.3304284010641227,
-                    -15.0,
-                    "09-20"
-                ],
-                [
-                    3.918155423609113,
-                    0.0,
-                    "09-23"
-                ],
-                [
-                    3.285216948289038,
-                    -35.0,
-                    "09-24"
-                ],
-                [
-                    2.9495992756782132,
-                    -15.0,
-                    "09-25"
-                ],
-                [
-                    2.4470790941910074,
-                    -20.0,
-                    "09-26"
-                ],
-                [
-                    2.1593922776104644,
-                    -90.0,
-                    "09-27"
-                ],
-                [
-                    1.5688263387008157,
-                    -320.0,
-                    "09-30"
-                ],
-                [
-                    1.2817403956074411,
-                    5.0,
-                    "10-08"
-                ],
-                [
-                    1.0774710596616206,
-                    35.0,
-                    "10-09"
-                ],
-                [
-                    0.9318757499000133,
-                    -35.0,
-                    "10-10"
-                ],
-                [
-                    0.9796587737721898,
-                    -75.0,
-                    "10-11"
-                ],
-                [
-                    0.7402583306197764,
-                    -50.0,
-                    "10-14"
-                ],
-                [
-                    0.6391567616057412,
-                    -75.0,
-                    "10-15"
-                ]
-            ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8,
-                "formatter": function(params){return params.value[2];}
-            },
-            "tooltip": {
-                "show": true,
-                "trigger": "item",
-                "triggerOn": "mousemove|click",
-                "axisPointer": {
-                    "type": "line"
-                },
-                "showContent": true,
-                "alwaysShowContent": false,
-                "showDelay": 0,
-                "hideDelay": 100,
-                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
-                "textStyle": {
-                    "fontSize": 14
-                },
-                "borderWidth": 0,
-                "padding": 5
-            }
         }
     ],
     "legend": [
@@ -2662,6 +2591,7 @@
                 "high",
                 "mid",
                 "low",
+                "PB2604",
                 "PB2603",
                 "PB2602",
                 "PB2601",
@@ -2678,14 +2608,14 @@
                 "PB2502",
                 "PB2501",
                 "PB2412",
-                "PB2411",
-                "PB2410"
+                "PB2411"
             ],
             "selected": {
                 "high": true,
                 "mid": true,
                 "low": true,
-                "PB2603": true,
+                "PB2604": true,
+                "PB2603": false,
                 "PB2602": false,
                 "PB2601": false,
                 "PB2512": false,
@@ -2701,8 +2631,7 @@
                 "PB2502": false,
                 "PB2501": false,
                 "PB2412": false,
-                "PB2411": false,
-                "PB2410": false
+                "PB2411": false
             },
             "show": true,
             "padding": 5,
@@ -2861,7 +2790,7 @@
         }
     }
 };
-        chart_c8b4127541ed49878a65759c36cdee27.setOption(option_c8b4127541ed49878a65759c36cdee27);
+        chart_94ec5822f1524c32bfcaffedd6d2b2d6.setOption(option_94ec5822f1524c32bfcaffedd6d2b2d6);
     </script>
 </body>
 </html>
