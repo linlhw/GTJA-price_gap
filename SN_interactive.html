@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="bf0b70deb41244d0b6c895b9d8301c92" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="cd8ebc08481d454aa87823b40ef2c2f8" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_bf0b70deb41244d0b6c895b9d8301c92 = echarts.init(
-            document.getElementById('bf0b70deb41244d0b6c895b9d8301c92'), 'white', {renderer: 'canvas'});
-        var option_bf0b70deb41244d0b6c895b9d8301c92 = {
+        var chart_cd8ebc08481d454aa87823b40ef2c2f8 = echarts.init(
+            document.getElementById('cd8ebc08481d454aa87823b40ef2c2f8'), 'white', {renderer: 'canvas'});
+        var option_cd8ebc08481d454aa87823b40ef2c2f8 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -316,6 +316,36 @@
             },
             "zlevel": 0,
             "z": 0
+        },
+        {
+            "type": "scatter",
+            "name": "SN2607",
+            "symbolSize": 10,
+            "data": [],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(params){return params.value[2];}
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
         },
         {
             "type": "scatter",
@@ -2533,142 +2563,6 @@
                 "borderWidth": 0,
                 "padding": 5
             }
-        },
-        {
-            "type": "scatter",
-            "name": "SN2501",
-            "symbolSize": 10,
-            "data": [
-                [
-                    4.288059163059163,
-                    -30.0,
-                    "12-17"
-                ],
-                [
-                    4.128431914501566,
-                    120.0,
-                    "12-18"
-                ],
-                [
-                    4.356618339295801,
-                    -300.0,
-                    "12-19"
-                ],
-                [
-                    3.9957732949087417,
-                    -150.0,
-                    "12-20"
-                ],
-                [
-                    3.5338900757428626,
-                    -270.0,
-                    "12-23"
-                ],
-                [
-                    3.107121836374338,
-                    -110.0,
-                    "12-24"
-                ],
-                [
-                    2.6398978990771647,
-                    -250.0,
-                    "12-25"
-                ],
-                [
-                    1.8699507389162562,
-                    -300.0,
-                    "12-26"
-                ],
-                [
-                    1.3309734513274336,
-                    -230.0,
-                    "12-27"
-                ],
-                [
-                    0.8094098883572568,
-                    -510.0,
-                    "12-30"
-                ],
-                [
-                    0.41837121212121214,
-                    -380.0,
-                    "12-31"
-                ],
-                [
-                    0.3654066437571592,
-                    -370.0,
-                    "01-02"
-                ],
-                [
-                    0.2901072223346146,
-                    -330.0,
-                    "01-03"
-                ],
-                [
-                    0.23792746113989638,
-                    -260.0,
-                    "01-06"
-                ],
-                [
-                    0.2094196804037006,
-                    -300.0,
-                    "01-07"
-                ],
-                [
-                    0.17784256559766765,
-                    -100.0,
-                    "01-08"
-                ],
-                [
-                    0.17642140468227424,
-                    430.0,
-                    "01-09"
-                ],
-                [
-                    0.17147501015847216,
-                    460.0,
-                    "01-10"
-                ],
-                [
-                    0.16308671439936356,
-                    130.0,
-                    "01-13"
-                ],
-                [
-                    0.15504479937670432,
-                    -950.0,
-                    "01-14"
-                ],
-                [
-                    0.15811209439528023,
-                    2160.0,
-                    "01-15"
-                ]
-            ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8,
-                "formatter": function(params){return params.value[2];}
-            },
-            "tooltip": {
-                "show": true,
-                "trigger": "item",
-                "triggerOn": "mousemove|click",
-                "axisPointer": {
-                    "type": "line"
-                },
-                "showContent": true,
-                "alwaysShowContent": false,
-                "showDelay": 0,
-                "hideDelay": 100,
-                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
-                "textStyle": {
-                    "fontSize": 14
-                },
-                "borderWidth": 0,
-                "padding": 5
-            }
         }
     ],
     "legend": [
@@ -2677,6 +2571,7 @@
                 "high",
                 "mid",
                 "low",
+                "SN2607",
                 "SN2606",
                 "SN2605",
                 "SN2604",
@@ -2693,14 +2588,14 @@
                 "SN2505",
                 "SN2504",
                 "SN2503",
-                "SN2502",
-                "SN2501"
+                "SN2502"
             ],
             "selected": {
                 "high": true,
                 "mid": true,
                 "low": true,
-                "SN2606": true,
+                "SN2607": true,
+                "SN2606": false,
                 "SN2605": false,
                 "SN2604": false,
                 "SN2603": false,
@@ -2716,8 +2611,7 @@
                 "SN2505": false,
                 "SN2504": false,
                 "SN2503": false,
-                "SN2502": false,
-                "SN2501": false
+                "SN2502": false
             },
             "show": true,
             "padding": 5,
@@ -2876,7 +2770,7 @@
         }
     }
 };
-        chart_bf0b70deb41244d0b6c895b9d8301c92.setOption(option_bf0b70deb41244d0b6c895b9d8301c92);
+        chart_cd8ebc08481d454aa87823b40ef2c2f8.setOption(option_cd8ebc08481d454aa87823b40ef2c2f8);
     </script>
 </body>
 </html>

@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="41581ff08a8344bda4f3c46949df47b3" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="287b30a652ed4cccabed44289d251c45" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_41581ff08a8344bda4f3c46949df47b3 = echarts.init(
-            document.getElementById('41581ff08a8344bda4f3c46949df47b3'), 'white', {renderer: 'canvas'});
-        var option_41581ff08a8344bda4f3c46949df47b3 = {
+        var chart_287b30a652ed4cccabed44289d251c45 = echarts.init(
+            document.getElementById('287b30a652ed4cccabed44289d251c45'), 'white', {renderer: 'canvas'});
+        var option_287b30a652ed4cccabed44289d251c45 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -316,6 +316,36 @@
             },
             "zlevel": 0,
             "z": 0
+        },
+        {
+            "type": "scatter",
+            "name": "PB2607",
+            "symbolSize": 10,
+            "data": [],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(params){return params.value[2];}
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
         },
         {
             "type": "scatter",
@@ -2533,142 +2563,6 @@
                 "borderWidth": 0,
                 "padding": 5
             }
-        },
-        {
-            "type": "scatter",
-            "name": "PB2501",
-            "symbolSize": 10,
-            "data": [
-                [
-                    3.485200920937077,
-                    -25.0,
-                    "12-17"
-                ],
-                [
-                    3.055351166599416,
-                    -45.0,
-                    "12-18"
-                ],
-                [
-                    2.67187853497901,
-                    -45.0,
-                    "12-19"
-                ],
-                [
-                    2.6482558139534884,
-                    -40.0,
-                    "12-20"
-                ],
-                [
-                    2.2349042709867453,
-                    -50.0,
-                    "12-23"
-                ],
-                [
-                    1.989445262641139,
-                    -50.0,
-                    "12-24"
-                ],
-                [
-                    1.6325751377297768,
-                    -40.0,
-                    "12-25"
-                ],
-                [
-                    1.3939344351715486,
-                    -15.0,
-                    "12-26"
-                ],
-                [
-                    0.8833796978126875,
-                    -30.0,
-                    "12-27"
-                ],
-                [
-                    0.7125713371379807,
-                    -40.0,
-                    "12-30"
-                ],
-                [
-                    0.5783923383191649,
-                    40.0,
-                    "12-31"
-                ],
-                [
-                    0.5682304292029089,
-                    -60.0,
-                    "01-02"
-                ],
-                [
-                    0.4558174422294666,
-                    -45.0,
-                    "01-03"
-                ],
-                [
-                    0.4095363463507386,
-                    30.0,
-                    "01-06"
-                ],
-                [
-                    0.39122195733235526,
-                    -20.0,
-                    "01-07"
-                ],
-                [
-                    0.3860219422998781,
-                    -45.0,
-                    "01-08"
-                ],
-                [
-                    0.3543617114358212,
-                    55.0,
-                    "01-09"
-                ],
-                [
-                    0.3582581793771707,
-                    -25.0,
-                    "01-10"
-                ],
-                [
-                    0.3584123222748815,
-                    -55.0,
-                    "01-13"
-                ],
-                [
-                    0.34019586624824155,
-                    -85.0,
-                    "01-14"
-                ],
-                [
-                    0.34519897268785726,
-                    80.0,
-                    "01-15"
-                ]
-            ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8,
-                "formatter": function(params){return params.value[2];}
-            },
-            "tooltip": {
-                "show": true,
-                "trigger": "item",
-                "triggerOn": "mousemove|click",
-                "axisPointer": {
-                    "type": "line"
-                },
-                "showContent": true,
-                "alwaysShowContent": false,
-                "showDelay": 0,
-                "hideDelay": 100,
-                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
-                "textStyle": {
-                    "fontSize": 14
-                },
-                "borderWidth": 0,
-                "padding": 5
-            }
         }
     ],
     "legend": [
@@ -2677,6 +2571,7 @@
                 "high",
                 "mid",
                 "low",
+                "PB2607",
                 "PB2606",
                 "PB2605",
                 "PB2604",
@@ -2693,14 +2588,14 @@
                 "PB2505",
                 "PB2504",
                 "PB2503",
-                "PB2502",
-                "PB2501"
+                "PB2502"
             ],
             "selected": {
                 "high": true,
                 "mid": true,
                 "low": true,
-                "PB2606": true,
+                "PB2607": true,
+                "PB2606": false,
                 "PB2605": false,
                 "PB2604": false,
                 "PB2603": false,
@@ -2716,8 +2611,7 @@
                 "PB2505": false,
                 "PB2504": false,
                 "PB2503": false,
-                "PB2502": false,
-                "PB2501": false
+                "PB2502": false
             },
             "show": true,
             "padding": 5,
@@ -2876,7 +2770,7 @@
         }
     }
 };
-        chart_41581ff08a8344bda4f3c46949df47b3.setOption(option_41581ff08a8344bda4f3c46949df47b3);
+        chart_287b30a652ed4cccabed44289d251c45.setOption(option_287b30a652ed4cccabed44289d251c45);
     </script>
 </body>
 </html>
