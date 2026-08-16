@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="0b506ff90f234e4293590e32aa5df722" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="f3efb94729db4d8f9945f3454c263e0e" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_0b506ff90f234e4293590e32aa5df722 = echarts.init(
-            document.getElementById('0b506ff90f234e4293590e32aa5df722'), 'white', {renderer: 'canvas'});
-        var option_0b506ff90f234e4293590e32aa5df722 = {
+        var chart_f3efb94729db4d8f9945f3454c263e0e = echarts.init(
+            document.getElementById('f3efb94729db4d8f9945f3454c263e0e'), 'white', {renderer: 'canvas'});
+        var option_f3efb94729db4d8f9945f3454c263e0e = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -316,6 +316,36 @@
             },
             "zlevel": 0,
             "z": 0
+        },
+        {
+            "type": "scatter",
+            "name": "CU2609",
+            "symbolSize": 10,
+            "data": [],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(params){return params.value[2];}
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
         },
         {
             "type": "scatter",
@@ -2568,137 +2598,6 @@
                 "borderWidth": 0,
                 "padding": 5
             }
-        },
-        {
-            "type": "scatter",
-            "name": "CU2503",
-            "symbolSize": 10,
-            "data": [
-                [
-                    5.1552483077198685,
-                    -160.0,
-                    "02-18"
-                ],
-                [
-                    4.870782803244095,
-                    -190.0,
-                    "02-19"
-                ],
-                [
-                    4.752825275640647,
-                    -230.0,
-                    "02-20"
-                ],
-                [
-                    4.345296427296622,
-                    -150.0,
-                    "02-21"
-                ],
-                [
-                    3.9171858538298454,
-                    -180.0,
-                    "02-24"
-                ],
-                [
-                    3.421953998899746,
-                    -140.0,
-                    "02-25"
-                ],
-                [
-                    2.901772607762417,
-                    -110.0,
-                    "02-26"
-                ],
-                [
-                    2.4845160205849646,
-                    -150.0,
-                    "02-27"
-                ],
-                [
-                    2.02688550810183,
-                    -130.0,
-                    "02-28"
-                ],
-                [
-                    1.8345642352371425,
-                    -120.0,
-                    "03-03"
-                ],
-                [
-                    1.6723942913300658,
-                    -80.0,
-                    "03-04"
-                ],
-                [
-                    1.5095630539573939,
-                    -140.0,
-                    "03-05"
-                ],
-                [
-                    1.378023262389956,
-                    -100.0,
-                    "03-06"
-                ],
-                [
-                    1.2389911548254777,
-                    -90.0,
-                    "03-07"
-                ],
-                [
-                    1.0177593011226485,
-                    -70.0,
-                    "03-10"
-                ],
-                [
-                    0.8930278241036763,
-                    -90.0,
-                    "03-11"
-                ],
-                [
-                    0.6950070638964587,
-                    -140.0,
-                    "03-12"
-                ],
-                [
-                    0.4955390428529906,
-                    -100.0,
-                    "03-13"
-                ],
-                [
-                    0.3799580079797525,
-                    -80.0,
-                    "03-14"
-                ],
-                [
-                    0.3338401736336771,
-                    -60.0,
-                    "03-17"
-                ]
-            ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8,
-                "formatter": function(params){return params.value[2];}
-            },
-            "tooltip": {
-                "show": true,
-                "trigger": "item",
-                "triggerOn": "mousemove|click",
-                "axisPointer": {
-                    "type": "line"
-                },
-                "showContent": true,
-                "alwaysShowContent": false,
-                "showDelay": 0,
-                "hideDelay": 100,
-                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
-                "textStyle": {
-                    "fontSize": 14
-                },
-                "borderWidth": 0,
-                "padding": 5
-            }
         }
     ],
     "legend": [
@@ -2707,6 +2606,7 @@
                 "high",
                 "mid",
                 "low",
+                "CU2609",
                 "CU2608",
                 "CU2607",
                 "CU2606",
@@ -2723,14 +2623,14 @@
                 "CU2507",
                 "CU2506",
                 "CU2505",
-                "CU2504",
-                "CU2503"
+                "CU2504"
             ],
             "selected": {
                 "high": true,
                 "mid": true,
                 "low": true,
-                "CU2608": true,
+                "CU2609": true,
+                "CU2608": false,
                 "CU2607": false,
                 "CU2606": false,
                 "CU2605": false,
@@ -2746,8 +2646,7 @@
                 "CU2507": false,
                 "CU2506": false,
                 "CU2505": false,
-                "CU2504": false,
-                "CU2503": false
+                "CU2504": false
             },
             "show": true,
             "padding": 5,
@@ -2906,7 +2805,7 @@
         }
     }
 };
-        chart_0b506ff90f234e4293590e32aa5df722.setOption(option_0b506ff90f234e4293590e32aa5df722);
+        chart_f3efb94729db4d8f9945f3454c263e0e.setOption(option_f3efb94729db4d8f9945f3454c263e0e);
     </script>
 </body>
 </html>
