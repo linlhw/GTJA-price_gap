@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="9e066ff81aa3420cb980b37e4891a55d" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="910eb6b5ab7f4432aa659c736fdea319" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_9e066ff81aa3420cb980b37e4891a55d = echarts.init(
-            document.getElementById('9e066ff81aa3420cb980b37e4891a55d'), 'white', {renderer: 'canvas'});
-        var option_9e066ff81aa3420cb980b37e4891a55d = {
+        var chart_910eb6b5ab7f4432aa659c736fdea319 = echarts.init(
+            document.getElementById('910eb6b5ab7f4432aa659c736fdea319'), 'white', {renderer: 'canvas'});
+        var option_910eb6b5ab7f4432aa659c736fdea319 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -319,6 +319,36 @@
         },
         {
             "type": "scatter",
+            "name": "ZN2610",
+            "symbolSize": 10,
+            "data": [],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": function(params){return params.value[2];}
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        },
+        {
+            "type": "scatter",
             "name": "ZN2609",
             "symbolSize": 10,
             "data": [
@@ -416,6 +446,16 @@
                     0.2985482988379953,
                     -35.0,
                     "09-11"
+                ],
+                [
+                    0.2761771271349219,
+                    15.0,
+                    "09-14"
+                ],
+                [
+                    0.27659995624407474,
+                    -55.0,
+                    "09-15"
                 ]
             ],
             "label": {
@@ -2568,137 +2608,6 @@
                 "borderWidth": 0,
                 "padding": 5
             }
-        },
-        {
-            "type": "scatter",
-            "name": "ZN2504",
-            "symbolSize": 10,
-            "data": [
-                [
-                    9.480793481423998,
-                    0.0,
-                    "03-18"
-                ],
-                [
-                    8.33905368962981,
-                    -5.0,
-                    "03-19"
-                ],
-                [
-                    7.36624775583483,
-                    10.0,
-                    "03-20"
-                ],
-                [
-                    7.361228515074669,
-                    5.0,
-                    "03-21"
-                ],
-                [
-                    7.806961099736765,
-                    -15.0,
-                    "03-24"
-                ],
-                [
-                    6.791820906046183,
-                    -25.0,
-                    "03-25"
-                ],
-                [
-                    4.864794741697417,
-                    -5.0,
-                    "03-26"
-                ],
-                [
-                    4.222415795586527,
-                    -20.0,
-                    "03-27"
-                ],
-                [
-                    3.020680336055461,
-                    -5.0,
-                    "03-28"
-                ],
-                [
-                    1.950978576279558,
-                    55.0,
-                    "03-31"
-                ],
-                [
-                    2.0222327341532638,
-                    15.0,
-                    "04-01"
-                ],
-                [
-                    1.6496899911426042,
-                    30.0,
-                    "04-02"
-                ],
-                [
-                    1.6539501641877534,
-                    45.0,
-                    "04-03"
-                ],
-                [
-                    1.7788511478134414,
-                    90.0,
-                    "04-07"
-                ],
-                [
-                    1.6202634011090573,
-                    65.0,
-                    "04-08"
-                ],
-                [
-                    1.4560872995003944,
-                    290.0,
-                    "04-09"
-                ],
-                [
-                    1.2177650429799427,
-                    285.0,
-                    "04-10"
-                ],
-                [
-                    1.131953428201811,
-                    325.0,
-                    "04-11"
-                ],
-                [
-                    1.049687636205143,
-                    125.0,
-                    "04-14"
-                ],
-                [
-                    0.8944894228258031,
-                    255.0,
-                    "04-15"
-                ]
-            ],
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8,
-                "formatter": function(params){return params.value[2];}
-            },
-            "tooltip": {
-                "show": true,
-                "trigger": "item",
-                "triggerOn": "mousemove|click",
-                "axisPointer": {
-                    "type": "line"
-                },
-                "showContent": true,
-                "alwaysShowContent": false,
-                "showDelay": 0,
-                "hideDelay": 100,
-                "formatter": function(params){return params.value[2]+ ' : ' +params.value[1];},
-                "textStyle": {
-                    "fontSize": 14
-                },
-                "borderWidth": 0,
-                "padding": 5
-            }
         }
     ],
     "legend": [
@@ -2707,6 +2616,7 @@
                 "high",
                 "mid",
                 "low",
+                "ZN2610",
                 "ZN2609",
                 "ZN2608",
                 "ZN2607",
@@ -2723,14 +2633,14 @@
                 "ZN2508",
                 "ZN2507",
                 "ZN2506",
-                "ZN2505",
-                "ZN2504"
+                "ZN2505"
             ],
             "selected": {
                 "high": true,
                 "mid": true,
                 "low": true,
-                "ZN2609": true,
+                "ZN2610": true,
+                "ZN2609": false,
                 "ZN2608": false,
                 "ZN2607": false,
                 "ZN2606": false,
@@ -2746,8 +2656,7 @@
                 "ZN2508": false,
                 "ZN2507": false,
                 "ZN2506": false,
-                "ZN2505": false,
-                "ZN2504": false
+                "ZN2505": false
             },
             "show": true,
             "padding": 5,
@@ -2906,7 +2815,7 @@
         }
     }
 };
-        chart_9e066ff81aa3420cb980b37e4891a55d.setOption(option_9e066ff81aa3420cb980b37e4891a55d);
+        chart_910eb6b5ab7f4432aa659c736fdea319.setOption(option_910eb6b5ab7f4432aa659c736fdea319);
     </script>
 </body>
 </html>
